@@ -1,53 +1,98 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.header{
-    display: flex;
-    gap:232.5px;
-    padding: 21.84px 0px;
- 
+.header {
+
+    padding: 21.84px 0;
+
 }
-.list ul{
+
+.list ul {
     display: flex;
     gap: 60px;
     list-style-type: none;
 }
 
-.icons ul{
+.icons ul {
     display: flex;
     gap: 24px;
     list-style-type: none;
 
 }
 
-.collections{
+.contanier {
+    width: calc(100% - 20%);
+    margin: 0 auto;
+}
+
+.row {
     display: flex;
-    text-align: center;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
+}
+
+.menu {
+    width: 25px;
+    display: none;
+}
+
+@media screen and (min-width:0) and (max-width:999px) {
+    .list {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+}
+
+.collections {
+    text-align: center;
     gap: 30px;
     padding-top: 40px;
     padding-bottom: 40px;
-  margin-left: 165px;
-  margin-right: 165px;
 
-
-  
 }
 
-.collection{
-    width:calc((100% - 90px) / 4)
+.collection {
+    width: calc((100% - 90px) / 4);
+    text-align: center;
 }
 
-img{
+@media screen and (min-width:0) and (max-width:400px) {
+    .collections .row {
+        flex-direction: column;
+    }
+
+    .collection {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:401px) and (max-width:700px) {
+    .collection {
+        width: calc((100% - 30px) / 2)
+    }
+}
+
+@media screen and (min-width:701px) and (max-width:900px) {
+    .collection {
+        width: calc((100% - 60px) / 3)
+    }
+}
+
+img {
     width: 100%;
 }
 
-h2{
+h2 {
     margin-top: 23px;
 }
-
-
-
