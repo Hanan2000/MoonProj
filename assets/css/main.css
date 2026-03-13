@@ -8,6 +8,24 @@
 
     padding: 21.84px 0;
 
+
+}
+
+:root {
+    --primaryColor: #3A3845;
+    --primaryFont: Inter;
+}
+
+body {
+    font-family: var(--primaryFont);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "EB Garamond", serif;
 }
 
 .list ul {
@@ -48,18 +66,92 @@
     .icons {
         display: none;
     }
+    .icons li .cart{
+        display:block ;
+    }
 
     .menu {
         display: flex;
     }
 }
 
+.hero {
+    background-image: url('../img/flat-lay-composition-different-sized-plates\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 640px;
+
+
+}
+
+.content {
+    width: 420px;
+    height: 640px;
+    background-color: #826F66;
+    position: absolute;
+    left: 165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
+
+.content p,
+h1 {
+    color: #FFFFFF;
+}
+
+.content .hero-bt {
+    width: 220px;
+    height: 40px;
+}
+
+.icon-con {
+    width: 85px;
+    height: 81px;
+}
+
+.content-m {
+    background-color: #826F66;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    gap: 30px;
+
+    display: none;
+}
+
+@media screen and (min-width:0) and (max-width:500px) {
+    .hero {
+        width: 430;
+        -ms-flex-direction: column-reverse;
+    }
+
+    .content {
+        display: none;
+
+    }
+
+    .content-m {
+        display: block;
+
+    }
+}
+
 .collections {
     text-align: center;
     gap: 30px;
-    padding-top: 40px;
+    padding-top: 80px;
     padding-bottom: 40px;
 
+}
+
+.collections h2 {
+    margin-top: 23px;
 }
 
 .collection {
@@ -89,10 +181,211 @@
     }
 }
 
+.christmas .row {
+    justify-content: center;
+}
+
+.christmas-cont {
+    background-color: #F7F6F5;
+    width: 555px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 60px 64px 60px;
+    height: 348px;
+    gap: 24px;
+
+}
+
+.christmas-cont h2 {
+    width: 398px;
+    font-weight: 700;
+    font-size: 28px;
+    color: #3A3845;
+    letter-spacing: 4%;
+    line-height: 32px;
+    font-family: Garamond;
+    text-transform: uppercase;
+
+}
+
+.christmas-cont p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: var(--primaryFont);
+    color: #595667;
+}
+
+.christmas-cont button {
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.christmas-img img {
+    width: 400px;
+    height: 348px;
+
+}
+
 img {
     width: 100%;
 }
 
-h2 {
-    margin-top: 23px;
+a {
+    text-decoration: none;
+    font-family: var(--primaryFont);
+    font-size: 14px;
+    color: var(--primaryColor);
 }
+
+.best_seller {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.best_seller .row {
+    gap: 30px;
+}
+
+.best_seller h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.best_seller .item_contant {
+    margin-top: 24px;
+}
+
+.best_seller h3 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.best_seller .item {
+    text-align: left;
+    width: calc((100% - (3*30px)) / 4);
+    margin-top: 40px;
+}
+
+.best_seller .price {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.best_seller p {
+    color: #807F86;
+    width: 80%;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 24px;
+    margin-bottom: 34px;
+}
+
+.best_seller .add-to-cart {
+    padding: 15px 18px;
+    background-color: #FFFFFF;
+    border: 1px black solid;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    width: 100%;
+
+}
+.historys {
+    width: 1110px;
+    text-align: center;
+    background-color: aquamarine;
+}
+.historys .row{
+    justify-content: center;
+}
+.historys .item{
+    width: 400px;
+    text-align: center;
+    background-color: #F7F6F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 64px 60px 64px 60px;
+
+}
+
+.blog h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: bold;
+    font-family: Garamond;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+
+}
+
+.blog .christmas span {
+    color: #807F86;
+    font-size: 18px;
+    font-style: Semi Bold;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: var(--primaryFont);
+}
+
+.sign-up {
+    text-align: center;
+    padding: 80px 60px 80px 60px;
+}
+
+.Signup-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.sign-up p {
+    color: #595667;
+    font-size: 16px;
+    font-style: Semi Bold;
+    font-weight: 600;
+    font-family: var(--primaryFont);
+
+}
+
+.sign-up h2 {
+    color: #3A3845;
+    font-size: 28px;
+    font-style: Bold;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Garamond;
+
+}
+
+.sign-up input {
+    border: none;
+    width: 389px;
+    border-bottom: 1px solid #3A3845;
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.sign-up button {
+    background-color: white;
+    padding: 15px 24px 15px 24px;
+    border: 1px solid #3A3845;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: var(--primaryFont);
+    font-style: Semi Bold;
+}
+
