@@ -82,10 +82,13 @@ h5 {
 }
 
 .hero {
+    position: relative;
+    width: 100%;
     background-image: url('../img/flat-lay-composition-different-sized-plates\ 1.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 640px;
+
 
 
 }
@@ -118,34 +121,26 @@ h1 {
     height: 81px;
 }
 
-.content-m {
-    background-color: #826F66;
-    height: 345px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    gap: 30px;
 
-    display: none;
-}
-
-@media screen and (min-width:0) and (max-width:500px) {
+@media screen and (min-width:0) and (max-width:768px) {
     .hero {
-        width: 430;
-        
+        display: flex;
+       flex-direction: column-reverse;
+       background-position: center top;
+
     }
 
     .content {
-        display: none;
-
+       position: relative;
+       width: 100%;
+      padding: 60px 20px;
+     
     }
+    .content .hero-bt {
+    width:100%;
+    
+}
 
-    .content-m {
-        display: block;
-
-    }
 }
 
 .collections {
