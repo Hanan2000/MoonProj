@@ -5,7 +5,7 @@
 }
 
 .header {
-  
+
     padding: 21.84px 0;
 
 
@@ -74,29 +74,33 @@ h5 {
     .menu {
         display: flex;
     }
- .contanier{
-    width: 100%;
-    margin: 0 auto;
- }
+
+    .contanier {
+        width: 100%;
     
+    }
+    
+
 }
 
 .hero {
     position: relative;
-    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+}
+.hero-img{
+ width: 100%;
+   height: 100vh;
     background-image: url('../img/flat-lay-composition-different-sized-plates\ 1.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 640px;
-    display: flex;
-
-
-
 }
 
 .content {
     width: 420px;
-    height: 640px;
+     height: 100vh;
     background-color: #826F66;
     position: absolute;
     left: 165px;
@@ -123,22 +127,20 @@ h1 {
 }
 
 
-@media screen and (min-width:0) and (max-width:768px) {
+@media screen and (min-width:0) and (max-width:772px) {
     .hero {
-     flex-direction: column-reverse;
-       background-position: center top;
-       height: 600px;
-       width: 100%;
+        flex-direction: column;
+        background-position: center top;
+        height:752px;
+        width: 100%;
     }
 
     .content {
-       position: relative;
-       width: 100%;
-       height: auto;
-      padding: 60px 20px;
-      top: 350px;
-      left: 0;
-
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 60px 20px;
+        
     }
 
 
@@ -149,7 +151,7 @@ h1 {
     gap: 30px;
     padding-top: 80px;
     padding-bottom: 40px;
- 
+
 
 }
 
@@ -184,14 +186,14 @@ h1 {
     }
 }
 
-.christmas-sec{
+.christmas-sec {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-   
+    grid-template-columns: repeat(2, 1fr);
+
 }
 
 .christmas-cont {
-     height: 348px;
+    height: 348px;
     background-color: #F7F6F5;
     display: flex;
     flex-direction: column;
@@ -204,7 +206,7 @@ h1 {
 
 .christmas-img img {
     height: 348px;
-   
+
 }
 
 
@@ -235,13 +237,13 @@ h1 {
 
 @media screen and (min-width:0) and (max-width:700px) {
 
-   
-.christmas-sec{
-      display: grid;
-    grid-template-columns:1fr;
-   }
 
-   
+    .christmas-sec {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
 }
 
 
@@ -315,18 +317,19 @@ a {
 }
 
 @media screen and (min-width:0) and (max-width:400px) {
-   .best_seller .item{
-    width: 100%;
-   }
+    .best_seller .item {
+        width: 100%;
+    }
 }
+
 @media screen and (min-width:401px) and (max-width:700px) {
-  .best_seller .item{
+    .best_seller .item {
         width: calc((100% - (1*30px)) / 2);
     }
 }
 
 @media screen and (min-width:701px) and (max-width:900px) {
-  .best_seller .item{
+    .best_seller .item {
         width: calc((100% - (2*30px)) / 3);
     }
 }
@@ -338,12 +341,12 @@ a {
 
 .history {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 
 }
 
 .history .item {
-    
+
     text-align: center;
     background-color: #F7F6F5;
     display: flex;
@@ -355,7 +358,7 @@ a {
 
 }
 
-.history .item h2{
+.history .item h2 {
     font-size: 28px;
     font-weight: 700;
     font-style: bold;
@@ -365,15 +368,17 @@ a {
     letter-spacing: 4%;
     color: #3A3845;
 }
-.history .item p{
-     font-size: 14px;
+
+.history .item p {
+    font-size: 14px;
     font-weight: 400;
     font-style: bold;
     font-family: var(--primaryFont);
     line-height: 24px;
     color: #595667;
 }
-.history .item button{
+
+.history .item button {
     color: #3A3845;
     font-size: 14px;
     font-weight: 700;
@@ -385,27 +390,28 @@ a {
     border: none;
     padding: 15px 18px 15px 18px;
     background-color: #F7F6F5;
-   
+
 }
 
 
-.history .item-img{
+.history .item-img {
     height: 348px;
 }
-.history .item-im img{
+
+.history .item-im img {
     height: 348px;
 }
 
 
 @media screen and (min-width:0) and (max-width:700px) {
 
-   
-.history{
-      display: grid;
-    grid-template-columns:1fr;
-   }
 
-   
+    .history {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
 }
 
 
@@ -580,6 +586,7 @@ a {
     color: #807F86;
     text-decoration: underline;
 }
+
 @media screen and (min-width:0) and (max-width:768px) {
     .row {
         flex-direction: column;
